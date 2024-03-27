@@ -7,6 +7,11 @@ body {
 a {
     font-family: Arial;
     color: #454545;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 #right {

@@ -14,6 +14,7 @@
         </div>
         <div id="button">
             <h1>2024</h1> <hr /> <br /> <br />
+            <a href="" onclick="cloak()">Puzzlemath [3/27/2024]</a> <br /> <br /> <br /> <br />
             <a href="https://minecraftgoldfish3.github.io/Activities">Activities [2/18/2024]</a> <br /> <br /> <br /> <br />
             <a href="https://minecraftgoldfish3.github.io/">minecraftgoldfish3.github.io [1/20/2024]</a> <br /> <br /> <br /> <br />
             <h1>2023</h1> <hr /> <br /> <br />
@@ -54,5 +55,23 @@
         <footer>
             <a href="https://minecraftgoldfish3.github.io/">Back to Homepage</a>
         </footer>
+        <script>
+            function cloak() {
+                win = window.open();
+                win.document.body.style.margin = "0";
+                win.document.body.style.height = "100vh";
+                var iframe = win.document.createElement("iframe");
+                iframe.style.border = "none";
+                iframe.style.width = "100%";
+                iframe.style.height = "100%";
+                iframe.style.margin = "0";
+                iframe.referrerpolicy = "no-referrer";
+                iframe.allow = "fullscreen";
+                iframe.src = "https://minecraftgoldfish3.github.io/Puzzlemath";
+                win.document.body.appendChild(iframe);
+                var script = win.document.createElement("script");
+                win.document.body.appendChild(script);
+            }
+        </script>
     </body>
 </html>
