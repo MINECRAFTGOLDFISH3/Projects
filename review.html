@@ -44,7 +44,7 @@
             input[type="text"]:focus, textarea:focus {
 		outline: none;
             }
-            input[type="button"] {
+            input[type="submit"] {
     		background-color: #ccf8ff;
     		color: #333333;
     		padding: 10px 20px;
@@ -57,7 +57,7 @@
     		text-align: center;
     		transform: translateX(0px);
             }
-            input[type="button"]:hover {
+            input[type="submit"]:hover {
         	background-color: #77e1f2;
         	color: #666666;
         	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
@@ -75,14 +75,7 @@
             <label for="review"><b>Review (Give feedback or write requests):</b></label>
             <textarea id="review" name="review" style="height: 100px;"></textarea><br />
 	    <p>This is the official review form for <a href="https://minecraftgoldfish3.github.io" target="_blank">minecraftgoldfish3.github.io</a> and <a href="https://illuminating.us" target="_blank">illuminating.us</a>.</p><br />
-            <input type="submit" id="button" name="submit" value="Submit Review" onclick="//sendReview()" />
-	    <p id="sent" style="text-align: center; display: none;"><br />Your review was submitted. Refresh the page to write another review.</p>
+            <input type="submit" id="button" name="submit" value="Submit Review" />
         </form>
-	<script>
-	    function sendReview() {
-		document.getElementById('sent').style.display = 'block';
-		document.getElementById('button').disabled = 'true';
-	    }
-	</script>
     </body>
 </html>
