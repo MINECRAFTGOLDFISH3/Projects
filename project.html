@@ -2,8 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Project | minecraftgoldfish3.github.io</title>
-        <!-- <meta http-equiv='refresh' content='0;https://minecraftgoldfish3.github.io/projects/index.html'> -->
+        <title>Project | Illuminate</title>
         <style>
             body, html {
                 margin: 0;
@@ -48,7 +47,7 @@
     <body>
         <div id="game-container"></div>
         <script>
-            function extractGameURL() {
+            function extractURL() {
                 var url = window.location.href;
                 if (url.indexOf('?') !== -1) {
                     var queryString = url.split('?')[1];
@@ -62,19 +61,19 @@
                 }
                 return null;
             }
-            function createIframe(gameURL) {
+            function createIframe(URL) {
                 var iframe = document.createElement('iframe');
                 iframe.style.border = "none";
                 iframe.style.width = "100%";
                 iframe.style.height = "100%";
                 iframe.referrerpolicy = "no-referrer";
                 iframe.allow = "fullscreen";
-                iframe.src = gameURL;
+                iframe.src = URL;
                 document.getElementById('game-container').appendChild(iframe);
             }
-            var gameURL = extractGameURL();
-            if (gameURL) {
-                createIframe(gameURL);
+            var projectURL = extractURL();
+            if (projectURL) {
+                createIframe(projectURL);
             } else {
                 window.location.href = "404.html";
             }
