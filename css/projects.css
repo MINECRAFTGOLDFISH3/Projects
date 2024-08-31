@@ -14,7 +14,7 @@ a:hover {
     text-decoration: underline;
 }
 
-#right {
+.right {
     font-family: Arial;
     text-align: right;
     color: #454545;
@@ -24,17 +24,17 @@ h1 {
     font-family: Arial;
 }
 
-#center {
+.center {
     text-align: center;
 }
 
-#button {
+.button {
     font-weight: bold;
     width: 800px;
     margin: 40px auto 0 auto;
 }
 
-    #button a {
+    .button a {
         -webkit-transition: all 200ms ease-out;
         -ms-transition: all 200ms ease-out;
         transition: all 200ms ease-out;
@@ -46,7 +46,7 @@ h1 {
         background-color: #45c1cc;
     }
 
-        #button a:hover {
+        .button a:hover {
             -webkit-transition: all 200ms ease-out;
             -ms-transition: all 200ms ease-out;
             transition: all 200ms ease-out;
@@ -66,3 +66,27 @@ footer {
     left: 0;
     right: 0;
 }
+
+.spacer300 {
+    height: 300px;
+}
+
+.big-btn {
+    background-color: #ccf8ff;
+    color: #333333;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: 2px solid #77e1f2;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    transform: translateX(0px);
+}
+
+    .big-btn:hover {
+        background-color: #77e1f2;
+        color: #666666;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
