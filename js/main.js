@@ -43,5 +43,4 @@ function insertads() {
     document.head.appendChild(script);
 }
 
-newad();
 insertads();
